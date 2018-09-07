@@ -1,0 +1,17 @@
+<br>
+<br>
+<br>
+<div class ='container'>
+  <div class ='row'>
+    <div class ='col-md-4'>
+      <h3 class= 'well'> Crea un nuevo todo..!</h3> 
+      <div class = 'well'>
+        <%= form_with model: @todo, local: true do |f|%>
+        <p>Description <%= f. text_field :description %> </p>
+        <p> Completed <%= f. text_field :completed %> </p>
+        <%= f. submit "Enviar", class:'btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
